@@ -4,10 +4,10 @@ body {
 }
 
 header {
-	
+	margin-top: 0px;
 	width: 100%;
 	background-color: #C6E5D9;
-	position: fixed;
+	
 	height: 100px;
 
 }
@@ -16,10 +16,11 @@ header img {
 
 	
 	display: block;
-	float: left;
+	margin-left: 300px;
 	padding-left: 150px;
 	padding-right: 150px;
 	margin-top: 25px;
+	position: absolute;
 }
 
 
@@ -51,10 +52,13 @@ nav li {
 }
 
 .cart {
-	float: left;
+	
 	font-family: "Open Sans", sans-serif;
 	margin-top: 45px;
 	padding-left: 150px;
+
+  position: absolute;
+  margin-left:800px;}
 }
 
 #cartbox {

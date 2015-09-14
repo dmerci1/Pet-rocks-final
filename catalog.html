@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style-sheet2.css">
+<link rel="stylesheet" type="text/css" href="catalog-style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src='jquery.zoom.js'></script>
+<script src='jquery.catalog.js'></script>
+
+
+
+
+</head>
+<style>
+#mdiv {
+    background-color: #64908A;
+    width: 80%;
+    min-height: 1000px;
+    margin-left: 10%;
+}
+
+      
+@media only screen and (min-width: 600px){
+    .lbox {
+        position: absolute;
+        border-style: ridge;
+        width: 70%;
+        height: 300px;
+        margin-top: 100px;
+        margin-bottom: 100px;        
+        margin-right: 100px;
+        border-width: 10px;
+        border-style: ridge;
+        border-color: blue;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-left: 10%;
+      }
+
+
+  
+    
+
+   
+
+      }
+      
+ 
+      
+        @media only screen and  (min-width: 768px){
+    .lbox {
+        position: absolute;
+        border-style: ridge;
+        width: 70%;
+        height: 450px;
+        margin-top: 50px;
+        margin-bottom: 200px;        margin-left: 10%;
+        margin-right: 100px;
+        border-width: 10px;
+        border-style: ridge;
+        border-color: blue;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-left: 10%;
+      }
+      }
+
+        @media only screen and  (min-width: 992px){
+    .lbox {
+        position: absolute;
+        border-style: ridge;
+        width: 70%;
+        height: 550px;
+        margin-top: 50px;
+        margin-bottom: 200px;        margin-left: 10%;
+        margin-right: 100px;
+        border-width: 10px;
+        border-style: ridge;
+        border-color: blue;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-left: 10%;
+
+      }
+      .pic { width:150px; 
+    height: 140px;
+
+} 
+      .sale {
+    background-color: grey;
+    border-color: #66FF33;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 15px;
+    width: 170px;
+    height: 220px;
+    margin: 25px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+    
+    
+      
+
+
+   }
+  h1 {
+    text-align: center;
+    color: blue;
+    background-color: transparent;
+  }       
+
+</style>
+<body>
+ <header>
+
+  <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="catalog.html">Catalog</a></li>
+    <li><a href="subscription.html">Subscription</a></li>
+    </ul>
+  </nav>
+
+   <a href="index.html">
+    <img src="mainlogo-01.png">
+   </a> 
+
+   <div class="cart"> Cart <i class="fa fa-chevron-down"></i> </div> 
+   
+
+ </header>
+<h1>Check out our hot deals our most loveable rocks!</h1>
+<div id="mdiv">
+
+<div class="panel">
+  
+  
+<input id="numb"  type="number" value="">
+
+
+<input id="numb_value"  value="Add to cart" type="button">
+
+<h3>How many of these do you wish to purchase?</h3>
+</div>
+
+
+
+<div class="panel2">
+    <h3>All items are in your cart. You may continue shopping or check out at any time.</h3>
+    <button id="hide">Continue Shopping</button>
+    <button class="checkout">Check Out</button>
+</div>
+<div class="panel3">
+    <h3 class="w3font">Thank you for your purchase!</h3>
+    <button class="close">Continue Shopping</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex1">
+    <img class="pic"src='images/small/prock1.jpg' >
+  </div>
+    <p>$3.99</p>
+  <button class="expand" id="exp1"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+
+<div class="sale">
+    <div class="zoom" id="ex2">
+    <img class="pic" src='images/small/prock2.jpg' >
+  </div>
+    <p>$3.99</p>
+    <button class="expand" id="exp2"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex3">
+    <img class="pic" src='images/small/prock3.jpg' >
+  </div>
+    <p>$2.99</p>
+    <button class="expand" id="exp3"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex4">
+    <img class="pic"src='images/small/prock4.jpg' >
+  </div>
+    <p>$1.99</p>
+    <button class="expand" id="exp4"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex5">
+    <img class="pic" src='images/small/prock5.jpeg' >
+  </div>
+    <p>free</p>
+    <button class="expand" id="exp5"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex6">
+    <img class="pic" src='images/small/prock6.jpg' >
+  </div>
+    <p>$2.99</p>
+    <button class="expand" id="exp6"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex7">
+    <img class="pic" src='images/small/prock7.jpg' >
+  </div>
+    <p>$2.99</p>
+    <button class="expand" id="exp7"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex8">
+    <img class="pic" src='images/small/prock8.jpg' >
+  </div>
+    <p>$3.50</p>
+    <button class="expand" id="exp8"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex9">
+    <img class="pic" src='images/small/prock9.jpg' >
+  </div>
+    <p>$1.99</p>
+    <button class="expand" id="exp9"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex10">
+    <img class="pic" src='images/small/prock10.jpg' >
+  </div>
+    <p>$2.99</p>
+    <button class="expand" id="exp10"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex11">
+    <img class="pic"src='images/small/prock11.jpg' >
+  </div>
+    <p>$3.99</p>
+    <button class="expand" id="exp11"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+<div class="sale">
+    <div class="zoom" id="ex12">
+    <img class="pic" src='images/small/prock12.jpg' >
+  </div>
+    <p>$10,000</p>
+    <button class="expand" id="exp12"></button>
+  <button class="show">Add to Cart</button>
+</div>
+
+
+
+
+<div id="lightbox1">
+   <div class="overlay"></div>
+<img class="lbox" src='images/small/prock1.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox2">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock2.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox3">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock3.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox4">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock4.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox5">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock5.jpeg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox6">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock6.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox7">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock7.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox8">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock8.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox9">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock9.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox10">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock10.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox11">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock11.jpg' >
+<button class="minimize">Close</button>
+</div>
+
+<div id="lightbox12">
+  <div class="overlay"></div>
+<img class="lbox" src='images/small/prock12.jpg' >
+<button class="minimize">Close</button>
+</div>
+</div>
+</div>
+
+<footer>
+
+   <div class="social">
+    <a href="https://www.facebook.com/petrockfan" target="_blank">
+      <i class="fa fa-facebook">
+      </i>
+    </a>
+   </div>
+
+   <div class="social">
+    <a href="https://twitter.com/officialpetrock" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+   </div>
+
+   <div class="social">
+    <a href="https://instagram.com/my.pet.rock/"target="_blank">
+      <i class="fa fa-instagram"></i>
+    </a>
+   </div>
+
+   <br>
+
+    <div class="footerinfo">
+     <ul>
+    <li><a href="aboutus.html">About Us</a></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+    <li><a href="terms.html">Terms of Service</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+    </div>
+    
+
+
+
+    
+
+  </footer>
+   
+
+</body>
+</html>
